@@ -2,14 +2,48 @@
 """ENTER YOUR SOLUTION HERE!"""
 
 class Employee:
-    def __init__(self, name):
+    def __init__(self, name, hasFixed, hasContract):
         self.name = name
+        self.hasFixed = hasFixed
+        self.hasContract = hasContract
+
 
     def get_pay(self):
-        pass
+        return
 
     def __str__(self):
         return self.name
+
+
+class SalaryEmployee(Employee):
+    def __init__(self, monthly_wage):
+        self.pay = monthly_wage
+    
+    def get_pay(self):
+        if self.hasFixed = True:
+        pass
+
+class HourlyEmployee(Employee):
+    def __init__(self, hourly_wage, hours_worked):
+        self.pay = hourly_wage * hours_worked
+
+
+    
+class ContractCommisson:
+    def __init__(self, number_of_contracts, contract_price):
+        # self.number_of_contracts = number_of_contracts
+        # self.contract_price = contract_price
+        self.contract_com= number_of_contracts * contract_price
+
+class FixedBonusCommisson:
+    def __init__(self, bonus):
+        self.fixed_bonus = bonus
+    
+   
+
+
+
+
 
 
 # Billie works on a monthly salary of 4000.  Their total pay is 4000.
